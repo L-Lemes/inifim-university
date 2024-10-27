@@ -5,7 +5,7 @@ import { ConfigurationTab } from "../_components/ConfigurationsTab";
 import { UserTab } from "../_components/UserTab";
 import { NavTab } from "../_components/NavTab";
 
-import { TabsControlProvider, useTabsControl } from "@/hooks/useTabsControl";
+import { useTabsControl } from "@/hooks/useTabsControl";
 
 import { CarouselSection } from "../_components/CarouselSection";
 import { SearchBar } from "../_components/SearchBar";
@@ -13,14 +13,13 @@ import { SearchBar } from "../_components/SearchBar";
 export default function House() {
   const { showTabOpen } = useTabsControl();
 
-  const isModalOpen = Object.values(showTabOpen).some(
-    (value) => value === true
-  );
+  const isTabOpen =
+    showTabOpen && Object.values(showTabOpen).some((value) => value === true);
 
   return (
     <div
       className={`relative  bg-[rgba(0,0,0,0.75)] p-6 overflow-hidden ${
-        isModalOpen ? "h-[100dvh]" : "h-full"
+        isTabOpen ? "h-[100dvh]" : "h-full"
       }`}
     >
       <Header />
