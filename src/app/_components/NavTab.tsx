@@ -1,3 +1,5 @@
+"use client";
+
 import { Tab } from "./Tab";
 import { SystemButton } from "./SystemButton";
 import { X } from "@phosphor-icons/react/dist/ssr";

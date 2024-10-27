@@ -1,3 +1,5 @@
+"use client";
+
 import { Tab } from "./Tab";
 import { Row } from "./Row";
 import { SystemButton } from "./SystemButton";

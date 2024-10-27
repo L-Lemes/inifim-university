@@ -1,3 +1,5 @@
+"use client";
+
 import { Header } from "../_components/Header";
 import { ConfigurationTab } from "../_components/ConfigurationsTab";
 import { UserTab } from "../_components/UserTab";

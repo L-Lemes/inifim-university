@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 
 import { useTabsControl } from "@/hooks/useTabsControl";
