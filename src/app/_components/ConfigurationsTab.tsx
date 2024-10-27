@@ -7,11 +7,6 @@ import { useTabsControl } from "@/hooks/useTabsControl";
 
 export const ConfigurationTab = () => {
   const { showTabOpen } = useTabsControl();
-  console.log(
-    "showTabOpen.configurationTabIsOpen:",
-    showTabOpen.configurationTabIsOpen
-  );
-
   return (
     <Tab
       title="CONFIGURAÇÕES"

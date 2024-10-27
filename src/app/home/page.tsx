@@ -10,11 +10,10 @@ import { useTabsControl } from "@/hooks/useTabsControl";
 import { CarouselSection } from "../_components/CarouselSection";
 import { SearchBar } from "../_components/SearchBar";
 
-export default function House() {
+export default function Home() {
   const { showTabOpen } = useTabsControl();
 
-  const isTabOpen =
-    showTabOpen && Object.values(showTabOpen).some((value) => value === true);
+  const isTabOpen = Object.values(showTabOpen).some((value) => value === true);
 
   return (
     <div

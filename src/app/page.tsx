@@ -1,12 +1,12 @@
 "use client";
 import { TabsControlProvider } from "@/hooks/useTabsControl";
 
-import House from "./home/page";
+import First from "./home/page";
 
-export default function Home() {
+export default function Page() {
   return (
     <TabsControlProvider>
-      <House />
+      <First />
     </TabsControlProvider>
   );
 }
