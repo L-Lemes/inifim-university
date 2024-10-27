@@ -8,7 +8,7 @@ import { X } from "@phosphor-icons/react/dist/ssr";
 import { useTabsControl } from "@/hooks/useTabsControl";
 
 export const ConfigurationTab = () => {
-  const { showTabOpen } = useTabsControl();
+  const { showTabOpen, handleToggleTabs } = useTabsControl();
   return (
     <Tab
       title="CONFIGURAÇÕES"
@@ -30,7 +30,10 @@ export const ConfigurationTab = () => {
         </div>
       </section>
       <div className="fixed bottom-6 left-1/2 z-10 -translate-x-1/2">
-        <SystemButton clicked={false}>
+        <SystemButton
+          clicked={false}
+          onClick={() => handleToggleTabs("configurationTabIsOpen")}
+        >
           <X width={22} height={22} color="#DFEAEC" />
         </SystemButton>
       </div>
