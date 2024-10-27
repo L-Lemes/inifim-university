@@ -1,14 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
-import {
-  ClerkProvider,
-  SignedIn,
-  SignedOut,
-  SignInButton,
-  UserButton,
-} from "@clerk/nextjs";
-import Head from "next/head";
+import { Providers } from "./provider";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -30,7 +23,7 @@ export default function RootLayout({
       <body
         className={`${roboto.className} bg-gradient-to-b from-[#1A99B2] to-[#331AB2] text-[#DFEAEC]`}
       >
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

@@ -1,5 +1,3 @@
-"use client";
-
 import { Header } from "../_components/Header";
 import { ConfigurationTab } from "../_components/ConfigurationsTab";
 import { UserTab } from "../_components/UserTab";
@@ -10,7 +8,7 @@ import { useTabsControl } from "@/hooks/useTabsControl";
 import { CarouselSection } from "../_components/CarouselSection";
 import { SearchBar } from "../_components/SearchBar";
 
-export default function Home() {
+export default function HomePage() {
   const { showTabOpen } = useTabsControl();
 
   const isTabOpen = Object.values(showTabOpen).some((value) => value === true);
