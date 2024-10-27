@@ -7,7 +7,7 @@ import { useTabsControl } from "@/hooks/useTabsControl";
 import Link from "next/link";
 
 export const NavTab = () => {
-  const { showTabOpen } = useTabsControl();
+  const { showTabOpen, handleToggleTabs } = useTabsControl();
 
   return (
     <Tab
@@ -41,7 +41,10 @@ export const NavTab = () => {
         </Link>
       </section>
       <div className="fixed bottom-6 left-1/2 -translate-x-1/2">
-        <SystemButton clicked={false}>
+        <SystemButton
+          clicked={false}
+          onClick={() => handleToggleTabs("navigationTabIsOpen")}
+        >
           <X width={22} height={22} color="#DFEAEC" />
         </SystemButton>
       </div>
