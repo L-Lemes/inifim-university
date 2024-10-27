@@ -34,3 +34,11 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Fodas
+
+## TDD
+  A piramide de testes é bastante familiar à nós desenvolvedores, entretanto no frontend a motivação dos testes altera a importância de cada abordagem. A mudança na perspectiva traz uma nova forma de ordenar a popularidade de testes, a ordenação em Troféu. Tal classificação visa os testes estáticos na base, seguidos pelos testes unitários, pelos testes de intregração - os quais terão maior abundância no projeto -, e por fim os testes funcionais. 
+
+    - Testes Estáticos: São testes que checam o comprimento de regras definido pelo time de engenharia. Eles rodam no ambiente de desenvolvimento, sem a necessidade de interpretar ou compilar o código.
+    -Testes Unitários
