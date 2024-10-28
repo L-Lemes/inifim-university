@@ -9,6 +9,7 @@ import { useTabsControl } from "@/hooks/useTabsControl";
 
 import { CarouselSection } from "../_components/CarouselSection";
 import { SearchBar } from "../_components/SearchBar";
+import { listData, subjectsData } from "@/data";
 
 export default function HomePage() {
   const { showTabOpen } = useTabsControl();
@@ -32,8 +33,8 @@ export default function HomePage() {
           </p>
           <SearchBar />
         </section>
-        <CarouselSection />
-        <CarouselSection />
+        <CarouselSection title="Visitados recentemente" data={subjectsData} />
+        <CarouselSection title="Continuar Respondendo" data={listData} />
       </main>
       <ConfigurationTab />
       <UserTab />
