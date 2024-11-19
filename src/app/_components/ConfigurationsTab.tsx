@@ -33,6 +33,7 @@ export const ConfigurationTab = () => {
         <SystemButton
           clicked={false}
           onClick={() => handleToggleTabs("configurationTabIsOpen")}
+          aria-label="Close"
         >
           <X width={22} height={22} color="#DFEAEC" />
         </SystemButton>

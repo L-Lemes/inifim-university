@@ -44,6 +44,7 @@ export const NavTab = () => {
         <SystemButton
           clicked={false}
           onClick={() => handleToggleTabs("navigationTabIsOpen")}
+          aria-label="Close"
         >
           <X width={22} height={22} color="#DFEAEC" />
         </SystemButton>

@@ -15,7 +15,6 @@ export default function HomePage() {
   const { showTabOpen } = useTabsControl();
 
   const isTabOpen = Object.values(showTabOpen).some((value) => value === true);
-
   return (
     <div
       className={`relative  bg-[rgba(0,0,0,0.75)] p-6 overflow-hidden ${

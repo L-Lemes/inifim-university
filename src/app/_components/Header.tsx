@@ -18,6 +18,7 @@ export const Header = () => {
           name="config"
           onClick={() => handleToggleTabs("configurationTabIsOpen")}
           clicked={showTabOpen.configurationTabIsOpen}
+          aria-label="Configuration"
         >
           <Gear width={22} height={22} color="#DFEAEC" />
         </SystemButton>
@@ -25,6 +26,7 @@ export const Header = () => {
           name="config"
           onClick={() => handleToggleTabs("userTabIsOpen")}
           clicked={showTabOpen.userTabIsOpen}
+          aria-label="User"
         >
           <UserCircle width={22} height={22} color="#DFEAEC" />
         </SystemButton>
@@ -32,6 +34,7 @@ export const Header = () => {
           name="config"
           onClick={() => handleToggleTabs("navigationTabIsOpen")}
           clicked={showTabOpen.navigationTabIsOpen}
+          aria-label="Navigation"
         >
           <List width={22} height={22} color="#DFEAEC" />
         </SystemButton>

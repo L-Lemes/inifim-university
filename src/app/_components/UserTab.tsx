@@ -23,7 +23,10 @@ export const UserTab = () => {
         </div>
       </section>
       <div className="fixed bottom-6 left-1/2 -translate-x-1/2">
-        <SystemButton onClick={() => handleToggleTabs("userTabIsOpen")}>
+        <SystemButton
+          onClick={() => handleToggleTabs("userTabIsOpen")}
+          aria-label="Close"
+        >
           <X width={22} height={22} color="#DFEAEC" />
         </SystemButton>
       </div>
