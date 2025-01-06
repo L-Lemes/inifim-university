@@ -18,7 +18,7 @@ export const Header = () => {
           name="config"
           onClick={() => handleToggleTabs("configurationTabIsOpen")}
           clicked={showTabOpen.configurationTabIsOpen}
-          aria-label="Configuration"
+          aria-label="teste"
         >
           <Gear width={22} height={22} color="#DFEAEC" />
         </SystemButton>
